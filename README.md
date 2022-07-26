@@ -23,15 +23,22 @@ The OutputDir directory will have the same subdirectory structure as the input d
 
 Findings of reproduction
 
-Process delta: inspect4py extracts relevant code features, detects class and function metadata and identifies the main entry points for using it
+Process delta: 
 
-Output delta: output:
+inspect4py extracts relevant code features, detects class and function metadata and identifies the main entry points for using it
+
+Output delta:
+
 *The are few repositories with package which have customised scripts instead of setup.py,Those are not captured .
+
 *Some scripts are misclassified as tests therefore lot of scripts are missing when compared to given input file
+
 *If repo has different extension other than .py ,it does’t identify ex:html,java them as different file
 
 
+
 Implementation of reproduction
+
 • Hardware requirements: 64bit CPU, 4 or more than
  works with both Mac or Linux OS
 	
